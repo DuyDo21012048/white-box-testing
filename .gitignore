@@ -1,0 +1,68 @@
+# Miscellaneous
+/phenikaa_campus/*.class
+/phenikaa_campus/*.log
+/phenikaa_campus/*.pyc
+/phenikaa_campus/*.swp
+/phenikaa_campus/.DS_Store
+/phenikaa_campus/.atom/
+/phenikaa_campus/.buildlog/
+/phenikaa_campus/.history
+/phenikaa_campus/.svn/
+
+# IntelliJ related
+/phenikaa_campus/*.iml
+/phenikaa_campus/*.ipr
+/phenikaa_campus/*.iws
+/phenikaa_campus/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+/phenikaa_campus/.dart_tool/
+/phenikaa_campus/.flutter-plugins
+/phenikaa_campus/.flutter-plugins-dependencies
+/phenikaa_campus/.packages
+/phenikaa_campus/pubspec.lock
+/phenikaa_campus/.pub-cache/
+/phenikaa_campus/.pub/
+phenikaa_campus/build
+**/coverage
+
+# Web related
+/phenikaa_campus/lib/generated_plugin_registrant.dart
+
+# Symbolication related
+/phenikaa_campus/app.*.symbols
+
+# Obfuscation related
+/phenikaa_campus/app.*.map.json
+
+# Android Studio will place build artifacts here
+/phenikaa_campus//android/app/debug
+/phenikaa_campus//android/app/profile
+/phenikaa_campus//android/app/release
+
+# generated file
+/phenikaa_campus/*.g.dart
+/phenikaa_campus/*.graphql.dart
+/phenikaa_campus/*.gr.dart
+/phenikaa_campus/*.freezed.dart
+/phenikaa_campus/*.config.dart
+/phenikaa_campus/*.gen.dart
+/phenikaa_campus/*.mocks.dart
+/phenikaa_campus/resources/lib/src/generated
+/phenikaa_campus/app/lib/ui/res/generated
+/phenikaa_campus/data/lib/src/repository/model/generated
+
+/phenikaa_campus/tools/*/*.jar
+/phenikaa_campus/tools/gen_text_styles/output/
+/phenikaa_campus/.vscode/settings.json
+/phenikaa_campus/env/
+/phenikaa_campus/.fvm/
+/phenikaa_campus/*.mdb
+/phenikaa_campus/pubspec_overrides.yaml

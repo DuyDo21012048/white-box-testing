@@ -1,0 +1,14 @@
+{
+  "cmake.configureOnOpen": false,
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  // Remove .fvm files from search
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  // Remove from file watching
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "dart.flutterSdkPaths": ["/Users/fhihung/fvm/versions/3.13.1"],
+  "cmake.sourceDirectory": "/Users/fhihung/Documents/workspaces/git_clone/PTTKTPM_N01_Project_1_PhenikaaCampus/phenikaa_campus/linux"
+}
