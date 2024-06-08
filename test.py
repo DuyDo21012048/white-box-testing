@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from .models import ChatRoom, Message
 from .views import send_message
 
-class SendMessageTest(unittest.TestCase):
+class TestModels(unittest.TestCase):
 
     def setUp(self):
         self.user1 = User.objects.create_user(username='user1', password='pass')
