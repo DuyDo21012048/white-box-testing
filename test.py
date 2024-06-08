@@ -3,7 +3,39 @@ from django.contrib.auth.models import User
 from .models import ChatRoom, Message
 from .views import send_message
 
-class TestModels(unittest.TestCase):
+class LoginTest(unittest.TestCase):
+
+    def setUp(self):
+        self.user = User.objects.create_user(username='user1', password='pass')
+
+    def test_login_success(self):
+        result = login('user1', 'pass')
+        self.assertEqual(result, "Login successful")
+
+    def test_login_missing_parameters(self):
+        with self.assertRaises(ValueError):
+            login('', 'pass')
+        with self.assertRaises(ValueError):
+            login('user1', '')
+
+    def test_login_user_not_exist(self):
+        with self.assertRaises(ValueError):
+            login('nonexistent_user', 'pass')
+
+    def test_login_invalid_password(self):
+        with self.assertRaises(ValueError):
+            login('user1', 'wrongpass')
+
+    def test_login_disabled_user(self):
+        self.user.is_active = False
+        self.user.save()
+        with self.assertRaises(PermissionError):
+            login('user1', 'pass')
+
+if __name__ == '__main__':
+    unittest.main()
+
+class SendMessageTest(unittest.TestCase):
 
     def setUp(self):
         self.user1 = User.objects.create_user(username='user1', password='pass')
