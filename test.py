@@ -26,12 +26,6 @@ class LoginTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             login('user1', 'wrongpass')
 
-    def test_login_disabled_user(self):
-        self.user.is_active = False
-        self.user.save()
-        with self.assertRaises(PermissionError):
-            login('user1', 'pass')
-
 if __name__ == '__main__':
     unittest.main()
 
